@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kerala Government Lottery – Official 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Tiro+Devanagari+Hindi&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cr:#C0152A;--cr2:#8B0000;--cr3:#FF2D47;
+  --nv:#080C1F;--nv2:#0D1435;--nv3:#141B45;
+  --gd:#D4AF37;--gd2:#F5E08B;--gd3:#B8962E;
+  --wh:#FAFAFA;--mu:rgba(250,250,250,0.55);
+  --grn:#00D26A;--grn2:#00A855;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Barlow Condensed',sans-serif;
+  background:var(--nv);
+  color:var(--wh);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* ── BACKGROUND PATTERN ── */
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(192,21,42,0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(212,175,55,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 0% 80%, rgba(192,21,42,0.08) 0%, transparent 60%),
+    var(--nv);
+  pointer-events:none;
+}
+body::after{
+  content:'';position:fixed;inset:0;z-index:0;
+  background-image:
+    linear-gradient(rgba(212,175,55,0.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(212,175,55,0.04) 1px,transparent 1px);
+  background-size:40px 40px;
+  pointer-events:none;
+}
+
+/* ── PAGE WRAP ── */
+.page{position:relative;z-index:1;max-width:480px;margin:0 auto;padding:0 14px 80px}
+
+/* ── TOP BANNER ── */
+.topbar{
+  background:linear-gradient(90deg,var(--cr2),var(--cr),var(--cr2));
+  text-align:center;font-size:11px;font-weight:700;letter-spacing:3px;
+  padding:6px;color:var(--gd2);text-transform:uppercase;
+  border-bottom:1px solid var(--gd3);
+}
+
+/* ── HEADER ── */
+.header{
+  padding:28px 0 16px;text-align:center;position:relative;
+}
+.hdr-deco{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  margin-bottom:10px;
+}
+.deco-line{
+  flex:1;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gd),transparent);
+}
+.crown{font-size:40px;line-height:1;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.brand{
+  font-family:'Playfair Display',serif;
+  font-size:22px;font-weight:900;letter-spacing:1px;
+  background:linear-gradient(135deg,#D4AF37 0%,#F5E08B 40%,#D4AF37 70%,#B8962E 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  background-size:200% auto;animation:shimmer 4s ease infinite;
+  line-height:1.2;margin-bottom:4px;
+}
+@keyframes shimmer{0%{background-position:0%}50%{background-position:100%}100%{background-position:0%}}
+.brand-sub{
+  font-size:12px;letter-spacing:4px;text-transform:uppercase;
+  color:var(--mu);font-weight:400;
+}
+.live-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:linear-gradient(90deg,var(--cr2),var(--cr));
+  border:1px solid rgba(212,175,55,0.4);
+  border-radius:4px;padding:4px 14px;
+  font-size:11px;font-weight:800;letter-spacing:3px;
+  text-transform:uppercase;color:var(--wh);
+  margin-top:8px;
+  box-shadow:0 0 20px rgba(192,21,42,0.4);
+  animation:pulse-red 2s ease infinite;
+}
+@keyframes pulse-red{0%,100%{box-shadow:0 0 20px rgba(192,21,42,0.3)}50%{box-shadow:0 0 35px rgba(192,21,42,0.6)}}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#ff5555;animation:blink 1s step-end infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+/* ── ART-DECO DIVIDER ── */
+.deco-div{
+  display:flex;align-items:center;gap:8px;
+  margin:14px 0;
+}
+.deco-div span{color:var(--gd);font-size:16px}
+.deco-div::before,.deco-div::after{
+  content:'';flex:1;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gd3),transparent);
+}
+
+/* ── PRIZE CARD ── */
+.prize-card{
+  background:linear-gradient(145deg,rgba(192,21,42,0.15) 0%,rgba(8,12,31,0.8) 50%,rgba(139,0,0,0.1) 100%);
+  border:1px solid var(--gd3);
+  border-radius:4px;padding:20px;text-align:center;
+  position:relative;overflow:hidden;margin:0 0 14px;
+  box-shadow:0 0 40px rgba(192,21,42,0.15),inset 0 0 60px rgba(212,175,55,0.03);
+}
+.prize-card::before,.prize-card::after{
+  content:'';position:absolute;
+  border:1px solid rgba(212,175,55,0.2);
+  border-radius:2px;
+}
+.prize-card::before{inset:6px}
+.prize-card::after{inset:10px;border-color:rgba(212,175,55,0.08)}
+.corner-deco{
+  position:absolute;width:20px;height:20px;
+  border-color:var(--gd);border-style:solid;
+}
+.corner-deco.tl{top:14px;left:14px;border-width:2px 0 0 2px}
+.corner-deco.tr{top:14px;right:14px;border-width:2px 2px 0 0}
+.corner-deco.bl{bottom:14px;left:14px;border-width:0 0 2px 2px}
+.corner-deco.br{bottom:14px;right:14px;border-width:0 2px 2px 0}
+.p-label{
+  font-size:11px;letter-spacing:4px;text-transform:uppercase;
+  color:var(--gd3);font-weight:700;margin-bottom:6px;
+}
+.p-amt{
+  font-family:'Playfair Display',serif;
+  font-size:48px;font-weight:900;line-height:1;
+  background:linear-gradient(180deg,#F5E08B 0%,#D4AF37 50%,#B8962E 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  animation:glow 2s ease infinite;
+}
+@keyframes glow{0%,100%{filter:brightness(1)}50%{filter:brightness(1.25)}}
+.p-note{font-size:12px;color:var(--mu);margin:4px 0 16px;letter-spacing:1px}
+.prize-row{
+  display:flex;justify-content:center;gap:8px;flex-wrap:wrap;
+}
+.prize-chip{
+  background:rgba(212,175,55,0.08);
+  border:1px solid rgba(212,175,55,0.25);
+  border-radius:3px;padding:7px 13px;
+  font-size:12px;font-weight:700;color:var(--gd2);
+  letter-spacing:0.5px;
+}
+.prize-chip small{display:block;font-size:10px;color:var(--mu);font-weight:400;letter-spacing:1px;margin-top:2px;text-transform:uppercase}
+
+/* ── TIMER ── */
+.timer-card{
+  background:rgba(8,12,31,0.7);
+  border:1px solid rgba(212,175,55,0.2);
+  border-radius:4px;padding:14px 16px;margin-bottom:14px;
+}
+.t-label{
+  font-size:11px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--cr3);font-weight:800;margin-bottom:10px;
+  display:flex;align-items:center;gap:6px;
+}
+.timer-boxes{display:flex;align-items:center;gap:6px;justify-content:center}
+.tbox{
+  flex:1;background:linear-gradient(180deg,var(--nv3),var(--nv2));
+  border:1px solid rgba(212,175,55,0.2);
+  border-radius:4px;padding:10px 4px;text-align:center;
+}
+.tbox .num{
+  font-family:'Playfair Display',serif;
+  font-size:30px;font-weight:700;color:var(--gd);
+  display:block;line-height:1;
+}
+.tbox .unit{font-size:9px;color:var(--mu);letter-spacing:2px;display:block;margin-top:3px;text-transform:uppercase}
+.tcolon{font-size:22px;color:var(--gd3);opacity:0.7;animation:blink 1s step-end infinite;margin-top:-6px}
+
+/* ── TICKETS SECTION ── */
+.sec-head{
+  display:flex;align-items:center;gap:10px;
+  font-size:12px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--gd);font-weight:800;margin:16px 0 10px;
+}
+.sec-head::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--gd3),transparent)}
+
+.meta-bar{
+  display:flex;justify-content:space-between;align-items:center;
+  background:rgba(0,210,106,0.07);
+  border:1px solid rgba(0,210,106,0.2);
+  border-radius:4px;padding:8px 14px;font-size:13px;
+  color:#69f0ae;margin-bottom:10px;
+}
+.srch{
+  width:100%;
+  background:rgba(255,255,255,0.05);
+  border:1.5px solid rgba(212,175,55,0.25);
+  border-radius:4px;padding:11px 16px;
+  font-size:14px;font-family:'Barlow Condensed',sans-serif;
+  color:var(--wh);outline:none;
+  transition:border-color 0.3s,box-shadow 0.3s;
+  margin-bottom:10px;letter-spacing:0.5px;
+}
+.srch::placeholder{color:rgba(255,255,255,0.3)}
+.srch:focus{border-color:var(--gd);box-shadow:0 0 16px rgba(212,175,55,0.15)}
+.count-bar{
+  background:rgba(212,175,55,0.06);border:1px solid rgba(212,175,55,0.15);
+  border-radius:4px;padding:6px 12px;font-size:12px;
+  display:flex;justify-content:space-between;margin-bottom:10px;
+  color:var(--gd3);letter-spacing:0.5px;
+}
+
+/* ── TICKET GRID ── */
+.tgrid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:6px;max-height:420px;overflow-y:auto;padding-right:2px;
+}
+.tgrid::-webkit-scrollbar{width:4px}
+.tgrid::-webkit-scrollbar-track{background:rgba(255,255,255,0.03)}
+.tgrid::-webkit-scrollbar-thumb{background:rgba(212,175,55,0.25);border-radius:4px}
+
+.tk{
+  background:linear-gradient(145deg,rgba(20,27,69,0.9),rgba(8,12,31,0.95));
+  border:1px solid rgba(212,175,55,0.15);
+  border-radius:4px;
+  padding:9px 5px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:3px;
+  cursor:pointer;user-select:none;
+  transition:all 0.18s ease;
+  position:relative;
+}
+.tk-ic{font-size:13px;line-height:1}
+.tk-n{
+  font-size:10px;font-weight:700;letter-spacing:0.3px;
+  color:var(--mu);font-family:'Barlow Condensed',sans-serif;
+}
+.tk:hover{
+  border-color:rgba(212,175,55,0.6);
+  transform:translateY(-2px) scale(1.04);
+  box-shadow:0 4px 16px rgba(212,175,55,0.15);
+  color:var(--wh);
+}
+.tk:hover .tk-n{color:var(--wh)}
+.tk.sel{
+  border-color:var(--gd);
+  background:linear-gradient(145deg,rgba(139,0,0,0.4),rgba(192,21,42,0.2));
+  box-shadow:0 0 14px rgba(192,21,42,0.35),inset 0 0 10px rgba(212,175,55,0.05);
+  transform:scale(1.03);
+}
+.tk.sel .tk-n{color:var(--gd2)}
+.tk.sel::after{
+  content:'✓';position:absolute;top:3px;right:5px;
+  font-size:9px;color:var(--grn);font-weight:900;
+}
+
+/* ── CHIPS ── */
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 10px}
+.chip{
+  background:rgba(192,21,42,0.15);
+  border:1px solid rgba(212,175,55,0.3);
+  border-radius:3px;padding:3px 9px;
+  font-size:11px;color:var(--gd2);font-weight:700;
+  display:flex;align-items:center;gap:5px;
+}
+.chip-x{cursor:pointer;color:var(--cr3);font-size:13px;line-height:1}
+
+.min-warn{
+  text-align:center;font-size:12px;color:var(--cr3);
+  font-weight:700;padding:8px;border-radius:4px;
+  border:1px dashed rgba(255,45,71,0.4);
+  background:rgba(255,45,71,0.07);
+  display:none;margin:8px 0;
+}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+
+/* ── SUMMARY ── */
+.summ{
+  background:linear-gradient(135deg,rgba(212,175,55,0.06),rgba(192,21,42,0.04));
+  border:1px solid rgba(212,175,55,0.2);
+  border-radius:4px;padding:14px 18px;margin:12px 0;
+  position:relative;overflow:hidden;
+}
+.summ::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;
+  width:3px;background:linear-gradient(180deg,var(--cr),var(--gd),var(--cr));
+}
+.srow{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:7px 0;font-size:14px;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.srow:last-child{border-bottom:none}
+.srow .sl{color:var(--mu)}
+.srow .sv{font-weight:700;color:var(--wh)}
+.srow.total .sl{color:var(--gd);font-weight:800;font-size:15px;letter-spacing:0.5px}
+.srow.total .sv{
+  color:var(--gd);font-size:22px;
+  font-family:'Playfair Display',serif;font-weight:700;
+}
+
+/* ── WHATSAPP BUTTON ── */
+.wa-wrap{margin:14px 0}
+.wa-btn{
+  width:100%;padding:17px 20px;border-radius:4px;border:none;
+  background:linear-gradient(135deg,#075E54 0%,#25D366 50%,#075E54 100%);
+  background-size:200% auto;
+  color:white;font-family:'Barlow Condensed',sans-serif;
+  font-size:19px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px;
+  box-shadow:0 6px 30px rgba(37,211,102,0.28);
+  animation:grnpulse 2.5s ease infinite;
+  position:relative;overflow:hidden;transition:transform 0.2s;
+}
+.wa-btn::after{
+  content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.18),transparent);
+  animation:swipe 3s 1s infinite;
+}
+@keyframes swipe{to{left:200%}}
+@keyframes grnpulse{0%,100%{box-shadow:0 6px 30px rgba(37,211,102,0.28)}50%{box-shadow:0 6px 44px rgba(37,211,102,0.55)}}
+.wa-btn:hover{transform:translateY(-2px);background-position:right center}
+.wa-icon{width:28px;height:28px;flex-shrink:0;filter:drop-shadow(0 1px 3px rgba(0,0,0,0.3))}
+
+/* ── TRUST STRIP ── */
+.trust{
+  display:flex;justify-content:center;flex-wrap:wrap;gap:14px;
+  margin:14px 0;
+}
+.tbadge{
+  display:flex;align-items:center;gap:5px;
+  font-size:11px;color:var(--mu);font-weight:600;letter-spacing:1px;
+}
+
+/* ── PAYMENTS ── */
+.pays{text-align:center;margin:10px 0}
+.pays-lbl{font-size:11px;color:var(--mu);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.pay-icons{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.pay-chip{
+  background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);
+  border-radius:3px;padding:7px 14px;font-size:13px;font-weight:700;
+}
+
+/* ── NOTICE ── */
+.notice{
+  border-left:3px solid var(--gd3);
+  background:rgba(212,175,55,0.05);
+  border-radius:0 4px 4px 0;
+  padding:10px 14px;font-size:12px;
+  color:rgba(245,224,139,0.8);line-height:1.6;margin:12px 0;
+}
+
+/* ── FOOTER ── */
+.footer{
+  text-align:center;font-size:11px;
+  color:rgba(255,255,255,0.2);
+  margin-top:24px;padding-top:14px;
+  border-top:1px solid rgba(212,175,55,0.1);
+  letter-spacing:1px;
+}
+
+/* ── FLOATING WHATSAPP ── */
+.wa-float{
+  position:fixed;bottom:24px;right:20px;z-index:9000;
+  width:60px;height:60px;border-radius:50%;
+  background:linear-gradient(135deg,#25D366,#128C7E);
+  border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,0.5),0 2px 8px rgba(0,0,0,0.3);
+  animation:wa-pulse 2.5s ease infinite;
+  transition:transform 0.2s;
+}
+.wa-float:hover{transform:scale(1.1)}
+@keyframes wa-pulse{
+  0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.5),0 2px 8px rgba(0,0,0,0.3)}
+  50%{box-shadow:0 4px 32px rgba(37,211,102,0.8),0 2px 12px rgba(0,0,0,0.35)}
+}
+.wa-float svg{width:34px;height:34px}
+/* tooltip */
+.wa-float::before{
+  content:'Book Karein';
+  position:absolute;right:70px;
+  background:rgba(0,0,0,0.75);
+  color:#fff;font-family:'Barlow Condensed',sans-serif;
+  font-size:12px;font-weight:700;letter-spacing:1px;
+  white-space:nowrap;padding:5px 10px;border-radius:4px;
+  opacity:0;transition:opacity 0.2s;pointer-events:none;
+}
+.wa-float:hover::before{opacity:1}
+
+/* ── CONFETTI ── */
+.cbox{position:fixed;inset:0;pointer-events:none;z-index:999;overflow:hidden}
+.cp{position:absolute;border-radius:2px;animation:fall linear forwards}
+@keyframes fall{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+</style>
+</head>
+<body>
+<div class="topbar">🏆 &nbsp; Kerala State Lotteries — Official Authorised Agent &nbsp; 🏆</div>
+<div class="cbox" id="cbox"></div>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="hdr-deco">
+      <div class="deco-line"></div>
+      <div class="crown">👑</div>
+      <div class="deco-line"></div>
+    </div>
+    <div class="brand">KERALA GOVERNMENT<br>LOTTERY</div>
+    <div class="brand-sub">Keralalotteries.net · Authorised Draw 2026</div>
+    <div class="live-badge"><span class="live-dot"></span> LIVE DRAW</div>
+  </div>
+
+  <!-- PRIZE CARD -->
+  <div class="prize-card">
+    <div class="corner-deco tl"></div>
+    <div class="corner-deco tr"></div>
+    <div class="corner-deco bl"></div>
+    <div class="corner-deco br"></div>
+    <div class="p-label">🥇 First Prize — Grand Jackpot</div>
+    <div class="p-amt">₹25 Crore</div>
+    <div class="p-note">Keralalotteries.net Official Bumper Draw</div>
+    <div class="prize-row">
+      <div class="prize-chip">₹5 Lakh<small>2nd Prize</small></div>
+      <div class="prize-chip">₹1 Lakh<small>3rd Prize</small></div>
+      <div class="prize-chip">₹5,000<small>Consolation</small></div>
+    </div>
+  </div>
+
+  <!-- TIMER -->
+  <div class="timer-card">
+    <div class="t-label"><span class="live-dot"></span> OFFER CLOSING IN</div>
+    <div class="timer-boxes">
+      <div class="tbox"><span class="num" id="t-h">00</span><span class="unit">Hours</span></div>
+      <div class="tcolon">:</div>
+      <div class="tbox"><span class="num" id="t-m">14</span><span class="unit">Mins</span></div>
+      <div class="tcolon">:</div>
+      <div class="tbox"><span class="num" id="t-s">59</span><span class="unit">Secs</span></div>
+    </div>
+  </div>
+
+  <!-- DECO DIVIDER -->
+  <div class="deco-div"><span>✦</span><span>✦</span><span>✦</span></div>
+
+  <!-- TICKETS -->
+  <div class="sec-head">🎟 VIP Tickets Select Karein</div>
+  <div class="meta-bar">
+    <span>💰 Price: <strong style="color:#fff">₹40 / Ticket</strong></span>
+    <span style="color:#FF6B6B;font-weight:800">⚠ Min. 3 Required</span>
+  </div>
+  <input type="text" class="srch" id="srch" placeholder="🔍 Ticket search karein... (e.g. KL987)" oninput="filter()">
+  <div class="count-bar">
+    <span id="tot-badge">📋 Total: 245</span>
+    <span id="sel-badge" style="color:#69f0ae">✅ Selected: 0</span>
+  </div>
+
+  <!-- TICKET GRID — ALL HARDCODED IN HTML -->
+  <div class="tgrid" id="tgrid">
+<div class="tk" onclick="tog(this,'KL654785')"><span class="tk-ic">🎟</span><span class="tk-n">KL654785</span></div>
+<div class="tk" onclick="tog(this,'KL465923')"><span class="tk-ic">🎟</span><span class="tk-n">KL465923</span></div>
+<div class="tk" onclick="tog(this,'KL416371')"><span class="tk-ic">🎟</span><span class="tk-n">KL416371</span></div>
+<div class="tk" onclick="tog(this,'KL461545')"><span class="tk-ic">🎟</span><span class="tk-n">KL461545</span></div>
+<div class="tk" onclick="tog(this,'KL541441')"><span class="tk-ic">🎟</span><span class="tk-n">KL541441</span></div>
+<div class="tk" onclick="tog(this,'KL647671')"><span class="tk-ic">🎟</span><span class="tk-n">KL647671</span></div>
+<div class="tk" onclick="tog(this,'KL242626')"><span class="tk-ic">🎟</span><span class="tk-n">KL242626</span></div>
+<div class="tk" onclick="tog(this,'KL262652')"><span class="tk-ic">🎟</span><span class="tk-n">KL262652</span></div>
+<div class="tk" onclick="tog(this,'KL266565')"><span class="tk-ic">🎟</span><span class="tk-n">KL266565</span></div>
+<div class="tk" onclick="tog(this,'KL540450')"><span class="tk-ic">🎟</span><span class="tk-n">KL540450</span></div>
+<div class="tk" onclick="tog(this,'KL525228')"><span class="tk-ic">🎟</span><span class="tk-n">KL525228</span></div>
+<div class="tk" onclick="tog(this,'KL572757')"><span class="tk-ic">🎟</span><span class="tk-n">KL572757</span></div>
+<div class="tk" onclick="tog(this,'KL722755')"><span class="tk-ic">🎟</span><span class="tk-n">KL722755</span></div>
+<div class="tk" onclick="tog(this,'KL638666')"><span class="tk-ic">🎟</span><span class="tk-n">KL638666</span></div>
+<div class="tk" onclick="tog(this,'KL668885')"><span class="tk-ic">🎟</span><span class="tk-n">KL668885</span></div>
+<div class="tk" onclick="tog(this,'KL227272')"><span class="tk-ic">🎟</span><span class="tk-n">KL227272</span></div>
+<div class="tk" onclick="tog(this,'KL657955')"><span class="tk-ic">🎟</span><span class="tk-n">KL657955</span></div>
+<div class="tk" onclick="tog(this,'KL555888')"><span class="tk-ic">🎟</span><span class="tk-n">KL555888</span></div>
+<div class="tk" onclick="tog(this,'KL545454')"><span class="tk-ic">🎟</span><span class="tk-n">KL545454</span></div>
+<div class="tk" onclick="tog(this,'KL288988')"><span class="tk-ic">🎟</span><span class="tk-n">KL288988</span></div>
+<div class="tk" onclick="tog(this,'KL517874')"><span class="tk-ic">🎟</span><span class="tk-n">KL517874</span></div>
+<div class="tk" onclick="tog(this,'KL451444')"><span class="tk-ic">🎟</span><span class="tk-n">KL451444</span></div>
+<div class="tk" onclick="tog(this,'KL878689')"><span class="tk-ic">🎟</span><span class="tk-n">KL878689</span></div>
+<div class="tk" onclick="tog(this,'KL652971')"><span class="tk-ic">🎟</span><span class="tk-n">KL652971</span></div>
+<div class="tk" onclick="tog(this,'KL891898')"><span class="tk-ic">🎟</span><span class="tk-n">KL891898</span></div>
+<div class="tk" onclick="tog(this,'KL877796')"><span class="tk-ic">🎟</span><span class="tk-n">KL877796</span></div>
+<div class="tk" onclick="tog(this,'KL897991')"><span class="tk-ic">🎟</span><span class="tk-n">KL897991</span></div>
+<div class="tk" onclick="tog(this,'KL989995')"><span class="tk-ic">🎟</span><span class="tk-n">KL989995</span></div>
+<div class="tk" onclick="tog(this,'KL562595')"><span class="tk-ic">🎟</span><span class="tk-n">KL562595</span></div>
+<div class="tk" onclick="tog(this,'KL997175')"><span class="tk-ic">🎟</span><span class="tk-n">KL997175</span></div>
+<div class="tk" onclick="tog(this,'KL998292')"><span class="tk-ic">🎟</span><span class="tk-n">KL998292</span></div>
+<div class="tk" onclick="tog(this,'KL898928')"><span class="tk-ic">🎟</span><span class="tk-n">KL898928</span></div>
+<div class="tk" onclick="tog(this,'KL999891')"><span class="tk-ic">🎟</span><span class="tk-n">KL999891</span></div>
+<div class="tk" onclick="tog(this,'KLK65959')"><span class="tk-ic">🎟</span><span class="tk-n">KLK65959</span></div>
+<div class="tk" onclick="tog(this,'KL999595')"><span class="tk-ic">🎟</span><span class="tk-n">KL999595</span></div>
+<div class="tk" onclick="tog(this,'KL541654')"><span class="tk-ic">🎟</span><span class="tk-n">KL541654</span></div>
+<div class="tk" onclick="tog(this,'KL546545')"><span class="tk-ic">🎟</span><span class="tk-n">KL546545</span></div>
+<div class="tk" onclick="tog(this,'KL365478')"><span class="tk-ic">🎟</span><span class="tk-n">KL365478</span></div>
+<div class="tk" onclick="tog(this,'KL754826')"><span class="tk-ic">🎟</span><span class="tk-n">KL754826</span></div>
+<div class="tk" onclick="tog(this,'KL321478')"><span class="tk-ic">🎟</span><span class="tk-n">KL321478</span></div>
+<div class="tk" onclick="tog(this,'KL321587')"><span class="tk-ic">🎟</span><span class="tk-n">KL321587</span></div>
+<div class="tk" onclick="tog(this,'KL247558')"><span class="tk-ic">🎟</span><span class="tk-n">KL247558</span></div>
+<div class="tk" onclick="tog(this,'KL782145')"><span class="tk-ic">🎟</span><span class="tk-n">KL782145</span></div>
+<div class="tk" onclick="tog(this,'KL985476')"><span class="tk-ic">🎟</span><span class="tk-n">KL985476</span></div>
+<div class="tk" onclick="tog(this,'KL357896')"><span class="tk-ic">🎟</span><span class="tk-n">KL357896</span></div>
+<div class="tk" onclick="tog(this,'KL784512')"><span class="tk-ic">🎟</span><span class="tk-n">KL784512</span></div>
+<div class="tk" onclick="tog(this,'KL125478')"><span class="tk-ic">🎟</span><span class="tk-n">KL125478</span></div>
+<div class="tk" onclick="tog(this,'KL985623')"><span class="tk-ic">🎟</span><span class="tk-n">KL985623</span></div>
+<div class="tk" onclick="tog(this,'KL654789')"><span class="tk-ic">🎟</span><span class="tk-n">KL654789</span></div>
+<div class="tk" onclick="tog(this,'KL123654')"><span class="tk-ic">🎟</span><span class="tk-n">KL123654</span></div>
+<div class="tk" onclick="tog(this,'KL789632')"><span class="tk-ic">🎟</span><span class="tk-n">KL789632</span></div>
+<div class="tk" onclick="tog(this,'KL456258')"><span class="tk-ic">🎟</span><span class="tk-n">KL456258</span></div>
+<div class="tk" onclick="tog(this,'KL745632')"><span class="tk-ic">🎟</span><span class="tk-n">KL745632</span></div>
+<div class="tk" onclick="tog(this,'KL569874')"><span class="tk-ic">🎟</span><span class="tk-n">KL569874</span></div>
+<div class="tk" onclick="tog(this,'KL525252')"><span class="tk-ic">🎟</span><span class="tk-n">KL525252</span></div>
+<div class="tk" onclick="tog(this,'KL363636')"><span class="tk-ic">🎟</span><span class="tk-n">KL363636</span></div>
+<div class="tk" onclick="tog(this,'KL969696')"><span class="tk-ic">🎟</span><span class="tk-n">KL969696</span></div>
+<div class="tk" onclick="tog(this,'KL265478')"><span class="tk-ic">🎟</span><span class="tk-n">KL265478</span></div>
+<div class="tk" onclick="tog(this,'KL687459')"><span class="tk-ic">🎟</span><span class="tk-n">KL687459</span></div>
+<div class="tk" onclick="tog(this,'KL879563')"><span class="tk-ic">🎟</span><span class="tk-n">KL879563</span></div>
+<div class="tk" onclick="tog(this,'KL933255')"><span class="tk-ic">🎟</span><span class="tk-n">KL933255</span></div>
+<div class="tk" onclick="tog(this,'KL785447')"><span class="tk-ic">🎟</span><span class="tk-n">KL785447</span></div>
+<div class="tk" onclick="tog(this,'KL554875')"><span class="tk-ic">🎟</span><span class="tk-n">KL554875</span></div>
+<div class="tk" onclick="tog(this,'KL366599')"><span class="tk-ic">🎟</span><span class="tk-n">KL366599</span></div>
+<div class="tk" onclick="tog(this,'KL215626')"><span class="tk-ic">🎟</span><span class="tk-n">KL215626</span></div>
+<div class="tk" onclick="tog(this,'KL541988')"><span class="tk-ic">🎟</span><span class="tk-n">KL541988</span></div>
+<div class="tk" onclick="tog(this,'KL516547')"><span class="tk-ic">🎟</span><span class="tk-n">KL516547</span></div>
+<div class="tk" onclick="tog(this,'KL648678')"><span class="tk-ic">🎟</span><span class="tk-n">KL648678</span></div>
+<div class="tk" onclick="tog(this,'KL416871')"><span class="tk-ic">🎟</span><span class="tk-n">KL416871</span></div>
+<div class="tk" onclick="tog(this,'KL514861')"><span class="tk-ic">🎟</span><span class="tk-n">KL514861</span></div>
+<div class="tk" onclick="tog(this,'KL652681')"><span class="tk-ic">🎟</span><span class="tk-n">KL652681</span></div>
+<div class="tk" onclick="tog(this,'KL541878')"><span class="tk-ic">🎟</span><span class="tk-n">KL541878</span></div>
+<div class="tk" onclick="tog(this,'KL325498')"><span class="tk-ic">🎟</span><span class="tk-n">KL325498</span></div>
+<div class="tk" onclick="tog(this,'KL359688')"><span class="tk-ic">🎟</span><span class="tk-n">KL359688</span></div>
+<div class="tk" onclick="tog(this,'KL538771')"><span class="tk-ic">🎟</span><span class="tk-n">KL538771</span></div>
+<div class="tk" onclick="tog(this,'KL241688')"><span class="tk-ic">🎟</span><span class="tk-n">KL241688</span></div>
+<div class="tk" onclick="tog(this,'KL241867')"><span class="tk-ic">🎟</span><span class="tk-n">KL241867</span></div>
+<div class="tk" onclick="tog(this,'KL251895')"><span class="tk-ic">🎟</span><span class="tk-n">KL251895</span></div>
+<div class="tk" onclick="tog(this,'KL539886')"><span class="tk-ic">🎟</span><span class="tk-n">KL539886</span></div>
+<div class="tk" onclick="tog(this,'KL571867')"><span class="tk-ic">🎟</span><span class="tk-n">KL571867</span></div>
+<div class="tk" onclick="tog(this,'KL325985')"><span class="tk-ic">🎟</span><span class="tk-n">KL325985</span></div>
+<div class="tk" onclick="tog(this,'KL596867')"><span class="tk-ic">🎟</span><span class="tk-n">KL596867</span></div>
+<div class="tk" onclick="tog(this,'KL518778')"><span class="tk-ic">🎟</span><span class="tk-n">KL518778</span></div>
+<div class="tk" onclick="tog(this,'KL479678')"><span class="tk-ic">🎟</span><span class="tk-n">KL479678</span></div>
+<div class="tk" onclick="tog(this,'KL658698')"><span class="tk-ic">🎟</span><span class="tk-n">KL658698</span></div>
+<div class="tk" onclick="tog(this,'KL265697')"><span class="tk-ic">🎟</span><span class="tk-n">KL265697</span></div>
+<div class="tk" onclick="tog(this,'KL489772')"><span class="tk-ic">🎟</span><span class="tk-n">KL489772</span></div>
+<div class="tk" onclick="tog(this,'KL254867')"><span class="tk-ic">🎟</span><span class="tk-n">KL254867</span></div>
+<div class="tk" onclick="tog(this,'KL519717')"><span class="tk-ic">🎟</span><span class="tk-n">KL519717</span></div>
+<div class="tk" onclick="tog(this,'KL555555')"><span class="tk-ic">🎟</span><span class="tk-n">KL555555</span></div>
+<div class="tk" onclick="tog(this,'KL654955')"><span class="tk-ic">🎟</span><span class="tk-n">KL654955</span></div>
+<div class="tk" onclick="tog(this,'KL256187')"><span class="tk-ic">🎟</span><span class="tk-n">KL256187</span></div>
+<div class="tk" onclick="tog(this,'KL233248')"><span class="tk-ic">🎟</span><span class="tk-n">KL233248</span></div>
+<div class="tk" onclick="tog(this,'KL877718')"><span class="tk-ic">🎟</span><span class="tk-n">KL877718</span></div>
+<div class="tk" onclick="tog(this,'KL657897')"><span class="tk-ic">🎟</span><span class="tk-n">KL657897</span></div>
+<div class="tk" onclick="tog(this,'KL418711')"><span class="tk-ic">🎟</span><span class="tk-n">KL418711</span></div>
+<div class="tk" onclick="tog(this,'KL987820')"><span class="tk-ic">🎟</span><span class="tk-n">KL987820</span></div>
+<div class="tk" onclick="tog(this,'KL987841')"><span class="tk-ic">🎟</span><span class="tk-n">KL987841</span></div>
+<div class="tk" onclick="tog(this,'KL987862')"><span class="tk-ic">🎟</span><span class="tk-n">KL987862</span></div>
+<div class="tk" onclick="tog(this,'KL987876')"><span class="tk-ic">🎟</span><span class="tk-n">KL987876</span></div>
+<div class="tk" onclick="tog(this,'KL987102')"><span class="tk-ic">🎟</span><span class="tk-n">KL987102</span></div>
+<div class="tk" onclick="tog(this,'KL987123')"><span class="tk-ic">🎟</span><span class="tk-n">KL987123</span></div>
+<div class="tk" onclick="tog(this,'KL987821')"><span class="tk-ic">🎟</span><span class="tk-n">KL987821</span></div>
+<div class="tk" onclick="tog(this,'KL987842')"><span class="tk-ic">🎟</span><span class="tk-n">KL987842</span></div>
+<div class="tk" onclick="tog(this,'KL987863')"><span class="tk-ic">🎟</span><span class="tk-n">KL987863</span></div>
+<div class="tk" onclick="tog(this,'KL987883')"><span class="tk-ic">🎟</span><span class="tk-n">KL987883</span></div>
+<div class="tk" onclick="tog(this,'KL987103')"><span class="tk-ic">🎟</span><span class="tk-n">KL987103</span></div>
+<div class="tk" onclick="tog(this,'KL987124')"><span class="tk-ic">🎟</span><span class="tk-n">KL987124</span></div>
+<div class="tk" onclick="tog(this,'KL248918')"><span class="tk-ic">🎟</span><span class="tk-n">KL248918</span></div>
+<div class="tk" onclick="tog(this,'KL074252')"><span class="tk-ic">🎟</span><span class="tk-n">KL074252</span></div>
+<div class="tk" onclick="tog(this,'KL949345')"><span class="tk-ic">🎟</span><span class="tk-n">KL949345</span></div>
+<div class="tk" onclick="tog(this,'KL716637')"><span class="tk-ic">🎟</span><span class="tk-n">KL716637</span></div>
+<div class="tk" onclick="tog(this,'KL332233')"><span class="tk-ic">🎟</span><span class="tk-n">KL332233</span></div>
+<div class="tk" onclick="tog(this,'KL912802')"><span class="tk-ic">🎟</span><span class="tk-n">KL912802</span></div>
+<div class="tk" onclick="tog(this,'KL675249')"><span class="tk-ic">🎟</span><span class="tk-n">KL675249</span></div>
+<div class="tk" onclick="tog(this,'KL817262')"><span class="tk-ic">🎟</span><span class="tk-n">KL817262</span></div>
+<div class="tk" onclick="tog(this,'KL479630')"><span class="tk-ic">🎟</span><span class="tk-n">KL479630</span></div>
+<div class="tk" onclick="tog(this,'KL944274')"><span class="tk-ic">🎟</span><span class="tk-n">KL944274</span></div>
+<div class="tk" onclick="tog(this,'KL618322')"><span class="tk-ic">🎟</span><span class="tk-n">KL618322</span></div>
+<div class="tk" onclick="tog(this,'KL454216')"><span class="tk-ic">🎟</span><span class="tk-n">KL454216</span></div>
+<div class="tk" onclick="tog(this,'KL161202')"><span class="tk-ic">🎟</span><span class="tk-n">KL161202</span></div>
+<div class="tk" onclick="tog(this,'KL526324')"><span class="tk-ic">🎟</span><span class="tk-n">KL526324</span></div>
+<div class="tk" onclick="tog(this,'KL614273')"><span class="tk-ic">🎟</span><span class="tk-n">KL614273</span></div>
+<div class="tk" onclick="tog(this,'KL267082')"><span class="tk-ic">🎟</span><span class="tk-n">KL267082</span></div>
+<div class="tk" onclick="tog(this,'KL295421')"><span class="tk-ic">🎟</span><span class="tk-n">KL295421</span></div>
+<div class="tk" onclick="tog(this,'KL779849')"><span class="tk-ic">🎟</span><span class="tk-n">KL779849</span></div>
+<div class="tk" onclick="tog(this,'KL866288')"><span class="tk-ic">🎟</span><span class="tk-n">KL866288</span></div>
+<div class="tk" onclick="tog(this,'KL733394')"><span class="tk-ic">🎟</span><span class="tk-n">KL733394</span></div>
+<div class="tk" onclick="tog(this,'KL539300')"><span class="tk-ic">🎟</span><span class="tk-n">KL539300</span></div>
+<div class="tk" onclick="tog(this,'KL535058')"><span class="tk-ic">🎟</span><span class="tk-n">KL535058</span></div>
+<div class="tk" onclick="tog(this,'KL963831')"><span class="tk-ic">🎟</span><span class="tk-n">KL963831</span></div>
+<div class="tk" onclick="tog(this,'KL405610')"><span class="tk-ic">🎟</span><span class="tk-n">KL405610</span></div>
+<div class="tk" onclick="tog(this,'KL510248')"><span class="tk-ic">🎟</span><span class="tk-n">KL510248</span></div>
+<div class="tk" onclick="tog(this,'KL227836')"><span class="tk-ic">🎟</span><span class="tk-n">KL227836</span></div>
+<div class="tk" onclick="tog(this,'KL620329')"><span class="tk-ic">🎟</span><span class="tk-n">KL620329</span></div>
+<div class="tk" onclick="tog(this,'KL980329')"><span class="tk-ic">🎟</span><span class="tk-n">KL980329</span></div>
+<div class="tk" onclick="tog(this,'KL980776')"><span class="tk-ic">🎟</span><span class="tk-n">KL980776</span></div>
+<div class="tk" onclick="tog(this,'KL903622')"><span class="tk-ic">🎟</span><span class="tk-n">KL903622</span></div>
+<div class="tk" onclick="tog(this,'KL215010')"><span class="tk-ic">🎟</span><span class="tk-n">KL215010</span></div>
+<div class="tk" onclick="tog(this,'KL125867')"><span class="tk-ic">🎟</span><span class="tk-n">KL125867</span></div>
+<div class="tk" onclick="tog(this,'KL126579')"><span class="tk-ic">🎟</span><span class="tk-n">KL126579</span></div>
+<div class="tk" onclick="tog(this,'KL858867')"><span class="tk-ic">🎟</span><span class="tk-n">KL858867</span></div>
+<div class="tk" onclick="tog(this,'KL100019')"><span class="tk-ic">🎟</span><span class="tk-n">KL100019</span></div>
+<div class="tk" onclick="tog(this,'KL130416')"><span class="tk-ic">🎟</span><span class="tk-n">KL130416</span></div>
+<div class="tk" onclick="tog(this,'KL108989')"><span class="tk-ic">🎟</span><span class="tk-n">KL108989</span></div>
+<div class="tk" onclick="tog(this,'KL301618')"><span class="tk-ic">🎟</span><span class="tk-n">KL301618</span></div>
+<div class="tk" onclick="tog(this,'KL936178')"><span class="tk-ic">🎟</span><span class="tk-n">KL936178</span></div>
+<div class="tk" onclick="tog(this,'KL313773')"><span class="tk-ic">🎟</span><span class="tk-n">KL313773</span></div>
+<div class="tk" onclick="tog(this,'KL043173')"><span class="tk-ic">🎟</span><span class="tk-n">KL043173</span></div>
+<div class="tk" onclick="tog(this,'KL007720')"><span class="tk-ic">🎟</span><span class="tk-n">KL007720</span></div>
+<div class="tk" onclick="tog(this,'KL179267')"><span class="tk-ic">🎟</span><span class="tk-n">KL179267</span></div>
+<div class="tk" onclick="tog(this,'KL285336')"><span class="tk-ic">🎟</span><span class="tk-n">KL285336</span></div>
+<div class="tk" onclick="tog(this,'KL595703')"><span class="tk-ic">🎟</span><span class="tk-n">KL595703</span></div>
+<div class="tk" onclick="tog(this,'KL460391')"><span class="tk-ic">🎟</span><span class="tk-n">KL460391</span></div>
+<div class="tk" onclick="tog(this,'KL429687')"><span class="tk-ic">🎟</span><span class="tk-n">KL429687</span></div>
+<div class="tk" onclick="tog(this,'KL276047')"><span class="tk-ic">🎟</span><span class="tk-n">KL276047</span></div>
+<div class="tk" onclick="tog(this,'KL623396')"><span class="tk-ic">🎟</span><span class="tk-n">KL623396</span></div>
+<div class="tk" onclick="tog(this,'KL439060')"><span class="tk-ic">🎟</span><span class="tk-n">KL439060</span></div>
+<div class="tk" onclick="tog(this,'KL304859')"><span class="tk-ic">🎟</span><span class="tk-n">KL304859</span></div>
+<div class="tk" onclick="tog(this,'KL984451')"><span class="tk-ic">🎟</span><span class="tk-n">KL984451</span></div>
+<div class="tk" onclick="tog(this,'KL471471')"><span class="tk-ic">🎟</span><span class="tk-n">KL471471</span></div>
+<div class="tk" onclick="tog(this,'KL864614')"><span class="tk-ic">🎟</span><span class="tk-n">KL864614</span></div>
+<div class="tk" onclick="tog(this,'KL139614')"><span class="tk-ic">🎟</span><span class="tk-n">KL139614</span></div>
+<div class="tk" onclick="tog(this,'KL968058')"><span class="tk-ic">🎟</span><span class="tk-n">KL968058</span></div>
+<div class="tk" onclick="tog(this,'KL134215')"><span class="tk-ic">🎟</span><span class="tk-n">KL134215</span></div>
+<div class="tk" onclick="tog(this,'KL359431')"><span class="tk-ic">🎟</span><span class="tk-n">KL359431</span></div>
+<div class="tk" onclick="tog(this,'KL529865')"><span class="tk-ic">🎟</span><span class="tk-n">KL529865</span></div>
+<div class="tk" onclick="tog(this,'KL040333')"><span class="tk-ic">🎟</span><span class="tk-n">KL040333</span></div>
+<div class="tk" onclick="tog(this,'KL173463')"><span class="tk-ic">🎟</span><span class="tk-n">KL173463</span></div>
+<div class="tk" onclick="tog(this,'KL635378')"><span class="tk-ic">🎟</span><span class="tk-n">KL635378</span></div>
+<div class="tk" onclick="tog(this,'KL394181')"><span class="tk-ic">🎟</span><span class="tk-n">KL394181</span></div>
+<div class="tk" onclick="tog(this,'KL711816')"><span class="tk-ic">🎟</span><span class="tk-n">KL711816</span></div>
+<div class="tk" onclick="tog(this,'KL933251')"><span class="tk-ic">🎟</span><span class="tk-n">KL933251</span></div>
+<div class="tk" onclick="tog(this,'KL417346')"><span class="tk-ic">🎟</span><span class="tk-n">KL417346</span></div>
+<div class="tk" onclick="tog(this,'KL309256')"><span class="tk-ic">🎟</span><span class="tk-n">KL309256</span></div>
+<div class="tk" onclick="tog(this,'KL879531')"><span class="tk-ic">🎟</span><span class="tk-n">KL879531</span></div>
+<div class="tk" onclick="tog(this,'KL986991')"><span class="tk-ic">🎟</span><span class="tk-n">KL986991</span></div>
+<div class="tk" onclick="tog(this,'KL741924')"><span class="tk-ic">🎟</span><span class="tk-n">KL741924</span></div>
+<div class="tk" onclick="tog(this,'KL717542')"><span class="tk-ic">🎟</span><span class="tk-n">KL717542</span></div>
+<div class="tk" onclick="tog(this,'KL302333')"><span class="tk-ic">🎟</span><span class="tk-n">KL302333</span></div>
+<div class="tk" onclick="tog(this,'KL361982')"><span class="tk-ic">🎟</span><span class="tk-n">KL361982</span></div>
+<div class="tk" onclick="tog(this,'KL065418')"><span class="tk-ic">🎟</span><span class="tk-n">KL065418</span></div>
+<div class="tk" onclick="tog(this,'KL971935')"><span class="tk-ic">🎟</span><span class="tk-n">KL971935</span></div>
+<div class="tk" onclick="tog(this,'KL086630')"><span class="tk-ic">🎟</span><span class="tk-n">KL086630</span></div>
+<div class="tk" onclick="tog(this,'KL169326')"><span class="tk-ic">🎟</span><span class="tk-n">KL169326</span></div>
+<div class="tk" onclick="tog(this,'KL721371')"><span class="tk-ic">🎟</span><span class="tk-n">KL721371</span></div>
+<div class="tk" onclick="tog(this,'KL987240')"><span class="tk-ic">🎟</span><span class="tk-n">KL987240</span></div>
+<div class="tk" onclick="tog(this,'KL195325')"><span class="tk-ic">🎟</span><span class="tk-n">KL195325</span></div>
+<div class="tk" onclick="tog(this,'KL897240')"><span class="tk-ic">🎟</span><span class="tk-n">KL897240</span></div>
+<div class="tk" onclick="tog(this,'KL251586')"><span class="tk-ic">🎟</span><span class="tk-n">KL251586</span></div>
+<div class="tk" onclick="tog(this,'KL171371')"><span class="tk-ic">🎟</span><span class="tk-n">KL171371</span></div>
+<div class="tk" onclick="tog(this,'KL103827')"><span class="tk-ic">🎟</span><span class="tk-n">KL103827</span></div>
+<div class="tk" onclick="tog(this,'KL205827')"><span class="tk-ic">🎟</span><span class="tk-n">KL205827</span></div>
+<div class="tk" onclick="tog(this,'KL538576')"><span class="tk-ic">🎟</span><span class="tk-n">KL538576</span></div>
+<div class="tk" onclick="tog(this,'KL204815')"><span class="tk-ic">🎟</span><span class="tk-n">KL204815</span></div>
+<div class="tk" onclick="tog(this,'KL708641')"><span class="tk-ic">🎟</span><span class="tk-n">KL708641</span></div>
+<div class="tk" onclick="tog(this,'KL592546')"><span class="tk-ic">🎟</span><span class="tk-n">KL592546</span></div>
+<div class="tk" onclick="tog(this,'KL305178')"><span class="tk-ic">🎟</span><span class="tk-n">KL305178</span></div>
+<div class="tk" onclick="tog(this,'KL601942')"><span class="tk-ic">🎟</span><span class="tk-n">KL601942</span></div>
+<div class="tk" onclick="tog(this,'KL254619')"><span class="tk-ic">🎟</span><span class="tk-n">KL254619</span></div>
+<div class="tk" onclick="tog(this,'KL681320')"><span class="tk-ic">🎟</span><span class="tk-n">KL681320</span></div>
+<div class="tk" onclick="tog(this,'KL407395')"><span class="tk-ic">🎟</span><span class="tk-n">KL407395</span></div>
+<div class="tk" onclick="tog(this,'KL631725')"><span class="tk-ic">🎟</span><span class="tk-n">KL631725</span></div>
+<div class="tk" onclick="tog(this,'KL681372')"><span class="tk-ic">🎟</span><span class="tk-n">KL681372</span></div>
+<div class="tk" onclick="tog(this,'KL695210')"><span class="tk-ic">🎟</span><span class="tk-n">KL695210</span></div>
+<div class="tk" onclick="tog(this,'KL109578')"><span class="tk-ic">🎟</span><span class="tk-n">KL109578</span></div>
+<div class="tk" onclick="tog(this,'KL513947')"><span class="tk-ic">🎟</span><span class="tk-n">KL513947</span></div>
+<div class="tk" onclick="tog(this,'KL789523')"><span class="tk-ic">🎟</span><span class="tk-n">KL789523</span></div>
+<div class="tk" onclick="tog(this,'KL542980')"><span class="tk-ic">🎟</span><span class="tk-n">KL542980</span></div>
+<div class="tk" onclick="tog(this,'KL101299')"><span class="tk-ic">🎟</span><span class="tk-n">KL101299</span></div>
+<div class="tk" onclick="tog(this,'KL267658')"><span class="tk-ic">🎟</span><span class="tk-n">KL267658</span></div>
+<div class="tk" onclick="tog(this,'KL705178')"><span class="tk-ic">🎟</span><span class="tk-n">KL705178</span></div>
+<div class="tk" onclick="tog(this,'KL275232')"><span class="tk-ic">🎟</span><span class="tk-n">KL275232</span></div>
+<div class="tk" onclick="tog(this,'KL579462')"><span class="tk-ic">🎟</span><span class="tk-n">KL579462</span></div>
+<div class="tk" onclick="tog(this,'KL208627')"><span class="tk-ic">🎟</span><span class="tk-n">KL208627</span></div>
+<div class="tk" onclick="tog(this,'KL175920')"><span class="tk-ic">🎟</span><span class="tk-n">KL175920</span></div>
+<div class="tk" onclick="tog(this,'KL175929')"><span class="tk-ic">🎟</span><span class="tk-n">KL175929</span></div>
+<div class="tk" onclick="tog(this,'KL649230')"><span class="tk-ic">🎟</span><span class="tk-n">KL649230</span></div>
+<div class="tk" onclick="tog(this,'KL894178')"><span class="tk-ic">🎟</span><span class="tk-n">KL894178</span></div>
+<div class="tk" onclick="tog(this,'KL129423')"><span class="tk-ic">🎟</span><span class="tk-n">KL129423</span></div>
+<div class="tk" onclick="tog(this,'KL108428')"><span class="tk-ic">🎟</span><span class="tk-n">KL108428</span></div>
+<div class="tk" onclick="tog(this,'KL101265')"><span class="tk-ic">🎟</span><span class="tk-n">KL101265</span></div>
+<div class="tk" onclick="tog(this,'KL102340')"><span class="tk-ic">🎟</span><span class="tk-n">KL102340</span></div>
+<div class="tk" onclick="tog(this,'KL172866')"><span class="tk-ic">🎟</span><span class="tk-n">KL172866</span></div>
+<div class="tk" onclick="tog(this,'KL272899')"><span class="tk-ic">🎟</span><span class="tk-n">KL272899</span></div>
+<div class="tk" onclick="tog(this,'KL162510')"><span class="tk-ic">🎟</span><span class="tk-n">KL162510</span></div>
+<div class="tk" onclick="tog(this,'KL290815')"><span class="tk-ic">🎟</span><span class="tk-n">KL290815</span></div>
+<div class="tk" onclick="tog(this,'KL276501')"><span class="tk-ic">🎟</span><span class="tk-n">KL276501</span></div>
+<div class="tk" onclick="tog(this,'KL540814')"><span class="tk-ic">🎟</span><span class="tk-n">KL540814</span></div>
+<div class="tk" onclick="tog(this,'KL158279')"><span class="tk-ic">🎟</span><span class="tk-n">KL158279</span></div>
+<div class="tk" onclick="tog(this,'KL203174')"><span class="tk-ic">🎟</span><span class="tk-n">KL203174</span></div>
+<div class="tk" onclick="tog(this,'KL307645')"><span class="tk-ic">🎟</span><span class="tk-n">KL307645</span></div>
+<div class="tk" onclick="tog(this,'KL542378')"><span class="tk-ic">🎟</span><span class="tk-n">KL542378</span></div>
+<div class="tk" onclick="tog(this,'KL224398')"><span class="tk-ic">🎟</span><span class="tk-n">KL224398</span></div>
+<div class="tk" onclick="tog(this,'KL554870')"><span class="tk-ic">🎟</span><span class="tk-n">KL554870</span></div>
+<div class="tk" onclick="tog(this,'KL356416')"><span class="tk-ic">🎟</span><span class="tk-n">KL356416</span></div>
+<div class="tk" onclick="tog(this,'KL541367')"><span class="tk-ic">🎟</span><span class="tk-n">KL541367</span></div>
+<div class="tk" onclick="tog(this,'KL615289')"><span class="tk-ic">🎟</span><span class="tk-n">KL615289</span></div>
+<div class="tk" onclick="tog(this,'KL266544')"><span class="tk-ic">🎟</span><span class="tk-n">KL266544</span></div>
+<div class="tk" onclick="tog(this,'KL989898')"><span class="tk-ic">🎟</span><span class="tk-n">KL989898</span></div>
+<div class="tk" onclick="tog(this,'KL985265')"><span class="tk-ic">🎟</span><span class="tk-n">KL985265</span></div>
+<div class="tk" onclick="tog(this,'KL556255')"><span class="tk-ic">🎟</span><span class="tk-n">KL556255</span></div>
+<div class="tk" onclick="tog(this,'KL545177')"><span class="tk-ic">🎟</span><span class="tk-n">KL545177</span></div>
+<div class="tk" onclick="tog(this,'KL817979')"><span class="tk-ic">🎟</span><span class="tk-n">KL817979</span></div>
+<div class="tk" onclick="tog(this,'KL629898')"><span class="tk-ic">🎟</span><span class="tk-n">KL629898</span></div>
+  </div>
+
+  <!-- SELECTED CHIPS -->
+  <div class="chips" id="chips"></div>
+  <div class="min-warn" id="mw">⚠ Minimum 3 Tickets select karna compulsory hai!</div>
+
+  <!-- SUMMARY BOX -->
+  <div class="summ">
+    <div class="srow">
+      <span class="sl">Selected Tickets</span>
+      <span class="sv" id="cnt">0</span>
+    </div>
+    <div class="srow">
+      <span class="sl">Price per Ticket</span>
+      <span class="sv">₹40</span>
+    </div>
+    <div class="srow total">
+      <span class="sl">💵 Total Amount</span>
+      <span class="sv" id="tot">₹0</span>
+    </div>
+  </div>
+
+  <!-- WHATSAPP -->
+  <div class="wa-wrap">
+    <button class="wa-btn" onclick="send()">
+      <svg class="wa-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="24" fill="#25D366"/>
+        <path d="M34.8 13.2C32.3 10.7 29 9.3 25.5 9.3c-7.2 0-13.1 5.9-13.1 13.1 0 2.3.6 4.6 1.8 6.6L12 39l10.2-2.7c1.9 1 4 1.6 6.2 1.6h.1c7.2 0 13.1-5.9 13.1-13.1-.1-3.5-1.5-6.8-3.8-9.6zM25.6 35.1c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.7-1.6-5.7 0-5.9 4.8-10.7 10.8-10.7 2.9 0 5.6 1.1 7.6 3.1s3.1 4.8 3.1 7.6c-.1 6-4.9 10.7-10.6 10.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1s0-.5.2-.6l.5-.6c.1-.2.2-.4.3-.6s.1-.4 0-.6-.7-1.7-.9-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.9 1.2 3.4 1.4 3.6 2.4 3.7 5.8 5.1c.8.4 1.4.6 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5c-.1-.1-.3-.2-.7-.4z" fill="#fff"/>
+      </svg>
+      WhatsApp Par Book Karein
+    </button>
+  </div>
+
+  <!-- TRUST -->
+  <div class="trust">
+    <div class="tbadge">🔒 Secure Payment</div>
+    <div class="tbadge">✅ Official Agent</div>
+    <div class="tbadge">⚡ Instant Confirm</div>
+  </div>
+
+  <!-- PAYMENTS -->
+  <div style="height:1px;background:rgba(212,175,55,0.1);margin:8px 0"></div>
+  <div class="pays">
+    <div class="pays-lbl">🔒 Secure Payment via</div>
+    <div class="pay-icons">
+      <div class="pay-chip">📱 GPay</div>
+      <div class="pay-chip">📲 PhonePe</div>
+      <div class="pay-chip">💳 Paytm</div>
+    </div>
+  </div>
+
+  <!-- NOTICE -->
+  <div class="notice">
+    ⚠ <strong>Note:</strong> Minimum 3 Tickets book karna compulsory hai. Sirf VIP tickets abhi available hain. Offer limited time ke liye hai.
+  </div>
+
+  <div class="footer">© 2026 Kerala State Lotteries Department · All Rights Reserved</div>
+</div>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<button class="wa-float" onclick="send()" title="WhatsApp par Book Karein">
+  <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <path d="M34.8 13.2C32.3 10.7 29 9.3 25.5 9.3c-7.2 0-13.1 5.9-13.1 13.1 0 2.3.6 4.6 1.8 6.6L12 39l10.2-2.7c1.9 1 4 1.6 6.2 1.6h.1c7.2 0 13.1-5.9 13.1-13.1-.1-3.5-1.5-6.8-3.8-9.6zM25.6 35.1c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.7-1.6-5.7 0-5.9 4.8-10.7 10.8-10.7 2.9 0 5.6 1.1 7.6 3.1s3.1 4.8 3.1 7.6c-.1 6-4.9 10.7-10.6 10.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1s0-.5.2-.6l.5-.6c.1-.2.2-.4.3-.6s.1-.4 0-.6-.7-1.7-.9-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.9 1.2 3.4 1.4 3.6 2.4 3.7 5.8 5.1c.8.4 1.4.6 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5c-.1-.1-.3-.2-.7-.4z" fill="#fff"/>
+  </svg>
+</button>
+
+<script>
+const WA = '916287506780';
+const PRICE = 40;
+const MIN = 3;
+let sel = new Set();
+
+function tog(el, n) {
+  if (sel.has(n)) { sel.delete(n); el.classList.remove('sel'); }
+  else { sel.add(n); el.classList.add('sel'); burst(el); }
+  upd();
+}
+
+function filter() {
+  const q = document.getElementById('srch').value.trim().toUpperCase();
+  document.querySelectorAll('.tk').forEach(t => {
+    t.style.display = (!q || t.querySelector('.tk-n').textContent.includes(q)) ? '' : 'none';
+  });
+}
+
+function upd() {
+  document.getElementById('cnt').textContent = sel.size;
+  document.getElementById('tot').textContent = '₹' + (sel.size * PRICE).toLocaleString('en-IN');
+  document.getElementById('sel-badge').textContent = '✅ Selected: ' + sel.size;
+  document.getElementById('mw').style.display = 'none';
+  const c = document.getElementById('chips');
+  c.innerHTML = '';
+  sel.forEach(n => {
+    const d = document.createElement('div');
+    d.className = 'chip';
+    d.innerHTML = '🎟 ' + n + ' <span class="chip-x" onclick="rm(\'' + n + '\')">✕</span>';
+    c.appendChild(d);
+  });
+}
+
+function rm(n) {
+  sel.delete(n);
+  document.querySelectorAll('.tk').forEach(t => {
+    if (t.querySelector('.tk-n').textContent === n) t.classList.remove('sel');
+  });
+  upd();
+}
+
+let secs = 14*60+59;
+(function tick(){
+  document.getElementById('t-h').textContent = String(Math.floor(secs/3600)).padStart(2,'0');
+  document.getElementById('t-m').textContent = String(Math.floor((secs%3600)/60)).padStart(2,'0');
+  document.getElementById('t-s').textContent = String(secs%60).padStart(2,'0');
+  secs = secs<=0 ? 14*60+59 : secs-1;
+  setTimeout(tick,1000);
+})();
+
+function send() {
+  if (sel.size < MIN) {
+    const w = document.getElementById('mw');
+    w.style.display = 'block';
+    w.style.animation = 'none';
+    requestAnimationFrame(() => { w.style.animation = 'shake 0.4s ease'; });
+    return;
+  }
+  confetti();
+  const msg = encodeURIComponent(
+    '🏆 *KERALA GOVERNMENT LOTTERY BOOKING*\n\n' +
+    '🎟 *Tickets (' + sel.size + '):*\n' + Array.from(sel).join('\n') + '\n\n' +
+    '💵 *Total: ₹' + (sel.size*PRICE).toLocaleString('en-IN') + '*\n\n' +
+    '⚡ Please confirm my booking!'
+  );
+  setTimeout(() => window.open('https://wa.me/' + WA + '?text=' + msg, '_blank'), 800);
+}
+
+function confetti() {
+  const box = document.getElementById('cbox');
+  const cols = ['#D4AF37','#C0152A','#25D366','#F5E08B','#fff','#FF2D47'];
+  for (let i = 0; i < 90; i++) {
+    const p = document.createElement('div');
+    p.className = 'cp';
+    p.style.cssText = 'left:'+Math.random()*100+'%;background:'+cols[~~(Math.random()*cols.length)]+';width:'+(4+Math.random()*7)+'px;height:'+(4+Math.random()*7)+'px;border-radius:'+(Math.random()>.5?'50%':'2px')+';animation:fall '+(1.5+Math.random()*2)+'s '+(Math.random()*0.5)+'s linear forwards;';
+    box.appendChild(p);
+    setTimeout(() => p.remove(), 3500);
+  }
+}
+
+function burst(el) {
+  const r = el.getBoundingClientRect();
+  const cx = r.left+r.width/2, cy = r.top+r.height/2;
+  for (let i = 0; i < 8; i++) {
+    const p = document.createElement('div');
+    const a = (i/8)*Math.PI*2, d = 20+Math.random()*20;
+    p.style.cssText = 'position:fixed;left:'+cx+'px;top:'+cy+'px;width:5px;height:5px;border-radius:50%;background:#D4AF37;pointer-events:none;z-index:9999;transition:all 0.45s ease-out;opacity:1;';
+    document.getElementById('cbox').appendChild(p);
+    requestAnimationFrame(() => { p.style.transform='translate('+Math.cos(a)*d+'px,'+Math.sin(a)*d+'px)';p.style.opacity='0'; });
+    setTimeout(() => p.remove(), 550);
+  }
+}
+</script>
+</body>
+</html>
